@@ -86,11 +86,11 @@ void OpenglRenderer::initialize_gl()
     if( !gl_initialized_ )
     {
         // Shader sources
-        const GLchar * vertex_source = VERT_SHADER_HEADER "attribute vec4 position;                 \n"
-                                                          "void main()                              \n"
-                                                          "{                                        \n"
-                                                          "  gl_Position = vec4(position.xyz, 1.0); \n"
-                                                          "}                                        \n";
+        const GLchar * vertex_source   = VERT_SHADER_HEADER "attribute vec4 position;                 \n"
+                                                            "void main()                              \n"
+                                                            "{                                        \n"
+                                                            "  gl_Position = vec4(position.xyz, 1.0); \n"
+                                                            "}                                        \n";
         const GLchar * fragment_source = FRAG_SHADER_HEADER "uniform vec2 resolution;                              \n"
                                                             "uniform float gradient;                               \n"
                                                             "void main()                                           \n"
